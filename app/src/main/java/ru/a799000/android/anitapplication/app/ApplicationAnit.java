@@ -21,6 +21,9 @@ public class ApplicationAnit extends android.app.Application {
 
     }
 
+    /*
+    Инициализация всего
+     */
     void init(){
         mAppComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
