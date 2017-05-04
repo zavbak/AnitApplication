@@ -45,8 +45,13 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+
+    //RX Binding
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile files('src/main/java/ru/a799000/android/anitapplication/repository/net/lib/ksoap2-android-assembly-3.1.0-jar-with-dependencies.jar')
+
 }

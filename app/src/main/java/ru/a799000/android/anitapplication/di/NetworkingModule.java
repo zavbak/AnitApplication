@@ -1,7 +1,5 @@
 package ru.a799000.android.anitapplication.di;
 
-import com.google.gson.Gson;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -9,7 +7,7 @@ import dagger.Provides;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import ru.a799000.android.anitapplication.repository.net.interfaceapi.TestApiService;
+import ru.a799000.android.anitapplication.repository.net.interfaceapi.ApiService;
 
 
 @Module
@@ -35,8 +33,8 @@ public class NetworkingModule {
 
     @Provides
     @Singleton
-    public TestApiService provideCatalogAPIService(Retrofit retrofit) {
-        return  retrofit.create(TestApiService.class);
+    public ApiService provideCatalogAPIService(Retrofit retrofit) {
+        return  retrofit.create(ApiService.class);
 
     }
 }
